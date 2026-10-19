@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="AMORAL — официальные площадки, Roblox и контент.">
+  <meta name="description" content="AMORAL — официальные площадки, Roblox и продажа Robux.">
   <meta name="color-scheme" content="dark">
+
   <title>AMORAL — Official Links</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,7 @@
       --white: #f7f7f7;
       --muted: #a0a0a0;
       --line: rgba(255,255,255,.13);
+      --panel: #111;
     }
 
     * {
@@ -49,8 +51,8 @@
       z-index: -2;
       pointer-events: none;
       background:
-        radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.095), transparent 44%),
-        linear-gradient(180deg, #0b0b0b, #060606 70%);
+        radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.09), transparent 45%),
+        linear-gradient(180deg, #0b0b0b, #060606 72%);
     }
 
     .grain {
@@ -83,13 +85,13 @@
     }
 
     .status {
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #aaa;
       font-size: 10px;
       letter-spacing: .16em;
       text-transform: uppercase;
-      color: #aaa;
-      border: 1px solid var(--line);
-      padding: 8px 10px;
-      border-radius: 999px;
       white-space: nowrap;
     }
 
@@ -102,50 +104,59 @@
     }
 
     .monogram {
+      display: grid;
+      place-items: center;
       width: 76px;
       height: 76px;
       margin: 0 auto 27px;
       border: 1px solid rgba(255,255,255,.26);
       border-radius: 23px;
-      display: grid;
-      place-items: center;
+      background: linear-gradient(145deg, #252525, #090909);
+      box-shadow: 0 20px 70px #000;
       font-size: 35px;
       font-weight: 800;
       letter-spacing: -.1em;
-      background: linear-gradient(145deg, #252525, #090909);
-      box-shadow: 0 20px 70px #000;
       animation: float 5s ease-in-out infinite;
     }
 
     .eyebrow {
+      margin: 0 0 15px;
+      color: #999;
       font-size: 10px;
       letter-spacing: .34em;
-      color: #999;
       text-transform: uppercase;
-      margin: 0 0 15px;
     }
 
     h1 {
+      margin: 0;
       font-size: clamp(43px, 9vw, 84px);
+      font-weight: 800;
       letter-spacing: -.075em;
       line-height: .98;
-      margin: 0;
-      font-weight: 800;
     }
 
     .subtitle {
+      max-width: 420px;
+      margin: 22px auto 0;
       color: #a3a3a3;
       font-size: clamp(13px, 2.4vw, 16px);
       line-height: 1.8;
-      max-width: 420px;
-      margin: 22px auto 0;
     }
 
     .rule {
       width: 42px;
       height: 1px;
-      background: #777;
       margin: 30px auto 36px;
+      background: #777;
+    }
+
+    .section-label {
+      margin: 0 0 12px 3px;
+      color: #777;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
     }
 
     .links {
@@ -229,11 +240,11 @@
     }
 
     .ico {
+      display: grid;
+      place-items: center;
       width: 42px;
       height: 42px;
       flex: 0 0 42px;
-      display: grid;
-      place-items: center;
       border: 1px solid var(--line);
       border-radius: 13px;
       background: #171717;
@@ -251,8 +262,8 @@
     }
 
     .link-text {
-      min-width: 0;
       flex: 1;
+      min-width: 0;
       text-align: left;
     }
 
@@ -265,16 +276,16 @@
     }
 
     .link-desc {
-      font-size: 11px;
-      color: #969696;
-      line-height: 1.5;
       margin-top: 5px;
+      color: #969696;
+      font-size: 11px;
+      line-height: 1.5;
     }
 
     .arrow {
       flex: 0 0 auto;
-      font-size: 20px;
       color: #aaa;
+      font-size: 20px;
       transition:
         transform .35s cubic-bezier(.22,1,.36,1),
         color .3s ease;
@@ -285,22 +296,30 @@
       color: #fff;
     }
 
+    .divider {
+      width: 100%;
+      max-width: 520px;
+      height: 1px;
+      margin: 29px auto;
+      background: rgba(255,255,255,.09);
+    }
+
     .note {
-      font-size: 11px;
-      line-height: 1.7;
-      color: #666;
-      text-align: center;
       max-width: 430px;
       margin: 22px auto 0;
+      color: #666;
+      font-size: 11px;
+      line-height: 1.7;
+      text-align: center;
     }
 
     footer {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       gap: 15px;
-      align-items: center;
-      border-top: 1px solid rgba(255,255,255,.09);
       padding: 23px 0 28px;
+      border-top: 1px solid rgba(255,255,255,.09);
       color: #737373;
       font-size: 10px;
       letter-spacing: .1em;
@@ -309,8 +328,8 @@
 
     footer .made {
       letter-spacing: .04em;
-      text-transform: none;
       text-align: right;
+      text-transform: none;
     }
 
     @keyframes rise {
@@ -345,9 +364,9 @@
       .monogram {
         width: 68px;
         height: 68px;
+        margin-bottom: 23px;
         border-radius: 21px;
         font-size: 31px;
-        margin-bottom: 23px;
       }
 
       .links {
@@ -375,8 +394,8 @@
       }
 
       .status {
-        font-size: 9px;
         padding: 7px 9px;
+        font-size: 9px;
       }
 
       main {
@@ -394,13 +413,17 @@
 
       .subtitle {
         max-width: 320px;
+        margin-top: 17px;
         font-size: 13px;
         line-height: 1.75;
-        margin-top: 17px;
       }
 
       .rule {
         margin: 25px auto 29px;
+      }
+
+      .section-label {
+        font-size: 9px;
       }
 
       .links {
@@ -429,14 +452,17 @@
         font-size: 11px;
       }
 
+      .divider {
+        margin: 24px auto;
+      }
+
       .note {
-        font-size: 10px;
         padding: 0 4px;
+        font-size: 10px;
       }
 
       footer {
         flex-wrap: wrap;
-        justify-content: space-between;
         padding: 20px 0 24px;
         font-size: 9px;
       }
@@ -454,8 +480,8 @@
 
       .link:active {
         transform: scale(.985);
-        background: rgba(255,255,255,.09);
         border-color: rgba(255,255,255,.3);
+        background: rgba(255,255,255,.09);
         transition-duration: .12s;
       }
     }
@@ -484,9 +510,7 @@
     <main>
       <section class="hero">
         <div class="monogram" aria-hidden="true">A.</div>
-
         <p class="eyebrow">Creator · Roblox · Content</p>
-
         <h1>AMORAL</h1>
 
         <p class="subtitle">
@@ -496,6 +520,9 @@
 
         <div class="rule"></div>
       </section>
+
+      <!-- Основные площадки -->
+      <p class="section-label">Мои площадки</p>
 
       <nav class="links" aria-label="Официальные площадки">
 
@@ -513,12 +540,10 @@
               <path d="M14 3c.6 3.1 2.4 4.8 5 5.2"/>
             </svg>
           </span>
-
           <span class="link-text">
             <span class="link-title">TikTok</span>
             <span class="link-desc">Новые видео и контент</span>
           </span>
-
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
 
@@ -528,7 +553,7 @@
           href="https://t.me/holodezfn"
           target="_blank"
           rel="noopener noreferrer"
-          style="--delay:160ms"
+          style="--delay:140ms"
         >
           <span class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24">
@@ -536,12 +561,10 @@
               <path d="m10.1 13.9 5.2-5.1"/>
             </svg>
           </span>
-
           <span class="link-text">
             <span class="link-title">Telegram</span>
             <span class="link-desc">Канал и новости</span>
           </span>
-
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
 
@@ -551,7 +574,7 @@
           href="https://discord.gg/HBzMcAqGp"
           target="_blank"
           rel="noopener noreferrer"
-          style="--delay:240ms"
+          style="--delay:200ms"
         >
           <span class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24">
@@ -561,20 +584,69 @@
               <path d="M8.5 13h.01M15.5 13h.01"/>
             </svg>
           </span>
-
           <span class="link-text">
             <span class="link-title">Discord с актёрами</span>
             <span class="link-desc">Сервер AMORAL и мои актёры</span>
           </span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
 
+      </nav>
+
+      <div class="divider"></div>
+
+      <!-- Продажа Robux -->
+      <p class="section-label">Покупка Robux</p>
+
+      <nav class="links" aria-label="Профили для покупки Robux">
+
+        <!-- FunPay -->
+        <a
+          class="link"
+          href="https://funpay.com/users/15385190/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--delay:260ms"
+        >
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8 9h5a2 2 0 0 1 0 4H8"/>
+              <path d="M8 7v10M8 15h6"/>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">FunPay</span>
+            <span class="link-desc">Мой профиль · Продажа Robux</span>
+          </span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <!-- Starvell -->
+        <a
+          class="link"
+          href="https://starvell.com/profile/ttamoral907"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--delay:320ms"
+        >
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">Starvell</span>
+            <span class="link-desc">Мой профиль · Продажа Robux</span>
+          </span>
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
 
       </nav>
 
       <p class="note">
-        Официальные ссылки AMORAL. Неофициальные аккаунты
-        могут не иметь отношения к автору.
+        Официальные ссылки AMORAL. Перед покупкой проверяй адрес
+        профиля и условия сделки на выбранной площадке.
       </p>
     </main>
 
@@ -590,3 +662,4 @@
   </script>
 </body>
 </html>
+
